@@ -1,42 +1,25 @@
 {
   "compilerOptions": {
-    "target": "es5",
     "module": "commonjs",
-    "checkJs": true,
-    "declaration": true,
-    "sourceMap": true,
-    "outDir": "./build",
-    "rootDir": "./",
-    "removeComments": true,
-    "strict": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "strictFunctionTypes": true,
-    "strictBindCallApply": true,
-    "strictPropertyInitialization": true,
-    "noImplicitThis": true,
-    "alwaysStrict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUncheckedIndexedAccess": true,
-    "noImplicitOverride": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "esModuleInterop": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "target": "es5",
+
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "paths": {},
+    "resolveJsonModule": true,
+    "removeComments": true,
+    "incremental": true,
+    "declaration": true,
+    "sourceMap": true,
+    "paths": {
+      "@library/prisma/*": [
+        "libs/prisma/src"
+      ]
+    },
   },
-  "include": [
-    "/apps/**/*",
-    "/libs/**/*",
-  ],
   "exclude": [
-    "/node_modules/",
-    "/build",
-    "/.git/"
+    "node_modules",
+    "dist",
   ]
 }

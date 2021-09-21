@@ -1,0 +1,16 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "../../dist/apps/person",
+        "declaration": false,
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*spec.ts",
+        "dist",
+        "test"
+    ]
+}
